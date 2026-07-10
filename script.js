@@ -1,7 +1,6 @@
 const translations = {
     "en": {
         "sidebar_text": "Gökay Gökcan_ Computer Engineering_ | Full-Stack Development_ | Cybersecurity_",
-        "top_welcome": "WELCOME TO GÖKAY GÖKCAN_ COMPUTER ENGINEERING",
         "nav_home": "HOME",
         "nav_about": "ABOUT",
         "nav_skills": "SKILLS",
@@ -60,7 +59,6 @@ const translations = {
     },
     "tr": {
         "sidebar_text": "Gökay Gökcan_ Bilgisayar Mühendisliği_ | Full-Stack Geliştirme_ | Siber Güvenlik_",
-        "top_welcome": "GÖKAY GÖKCAN'A HOŞGELDİNİZ_ BİLGİSAYAR MÜHENDİSLİĞİ",
         "nav_home": "ANASAYFA",
         "nav_about": "HAKKIMDA",
         "nav_skills": "YETENEKLER",

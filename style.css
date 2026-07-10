@@ -135,19 +135,6 @@ main {
     white-space: nowrap;
 }
 
-/* Top Bar */
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 40px;
-    border-bottom: var(--border-width) solid var(--border-color);
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    background: var(--bg-main);
-}
-
 /* Navbar */
 .navbar {
     width: 100%;
@@ -603,8 +590,6 @@ main {
     
     body { padding-right: 0; }
     .vertical-sidebar { display: none; }
-    
-    .top-bar { flex-direction: column; text-align: center; gap: 10px; padding: 10px 20px; }
     
     main, .nav-container, .footer-content { padding: 0 20px; }
     
