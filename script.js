@@ -1,12 +1,21 @@
 const translations = {
     "en": {
-        "nav_about": "About",
-        "nav_skills": "Skills",
-        "nav_experience": "Experience",
-        "nav_projects": "Projects",
-        "nav_education": "Education",
+        "sidebar_text": "Gökay Gökcan_ Computer Engineering_ | Full-Stack Development_ | Cybersecurity_",
+        "top_welcome": "WELCOME TO GÖKAY GÖKCAN_ COMPUTER ENGINEERING",
+        "nav_home": "HOME",
+        "nav_about": "ABOUT",
+        "nav_skills": "SKILLS",
+        "nav_experience": "EXPERIENCE",
+        "nav_projects": "PROJECTS",
+        "nav_education": "EDUCATION",
         "hero_greeting": "Hello, I'm",
-        "hero_title": 'Computer Engineering Student <span class="divider">|</span> Full-Stack Developer',
+        "hero_tag": "CUSTOM SOFTWARE SOLUTIONS_",
+        "hero_giant": "Coding_<br>Secure_<br><span class=\"accent-color\">Systems_</span>",
+        "scroll_down": "SCROLL DOWN &darr;",
+        "stat_1": "Full-Stack<br>Development",
+        "stat_2": "Hardware &<br>IoT Systems",
+        "stat_3": "Cybersecurity<br>& Pentesting",
+        "hero_title": "Computer Engineering Student | Full-Stack Developer_",
         "hero_desc": "Passionate about designing secure and integrated systems where hardware and software converge.",
         "hero_btn_work": "View My Work",
         "hero_btn_contact": "Contact Me",
@@ -50,13 +59,22 @@ const translations = {
         "footer_copy": "&copy; 2026 Gökay Gökcan. All Rights Reserved."
     },
     "tr": {
-        "nav_about": "Hakkımda",
-        "nav_skills": "Yetenekler",
-        "nav_experience": "Deneyim",
-        "nav_projects": "Projeler",
-        "nav_education": "Eğitim",
+        "sidebar_text": "Gökay Gökcan_ Bilgisayar Mühendisliği_ | Full-Stack Geliştirme_ | Siber Güvenlik_",
+        "top_welcome": "GÖKAY GÖKCAN'A HOŞGELDİNİZ_ BİLGİSAYAR MÜHENDİSLİĞİ",
+        "nav_home": "ANASAYFA",
+        "nav_about": "HAKKIMDA",
+        "nav_skills": "YETENEKLER",
+        "nav_experience": "DENEYİM",
+        "nav_projects": "PROJELER",
+        "nav_education": "EĞİTİM",
         "hero_greeting": "Merhaba, Ben",
-        "hero_title": 'Bilgisayar Mühendisliği Öğrencisi <span class="divider">|</span> Full-Stack Geliştirici',
+        "hero_tag": "ÖZEL YAZILIM ÇÖZÜMLERİ_",
+        "hero_giant": "Güvenli_<br>Sistemler_<br><span class=\"accent-color\">Kodluyoruz_</span>",
+        "scroll_down": "AŞAĞI KAYDIR &darr;",
+        "stat_1": "Full-Stack<br>Geliştirme",
+        "stat_2": "Donanım &<br>IoT Sistemleri",
+        "stat_3": "Siber Güvenlik<br>& Pentest",
+        "hero_title": "Bilgisayar Mühendisliği Öğrencisi | Full-Stack Geliştirici_",
         "hero_desc": "Donanım ve yazılımın birleştiği güvenli ve entegre sistemler tasarlama tutkusuna sahibim.",
         "hero_btn_work": "Projelerim",
         "hero_btn_contact": "İletişime Geç",
@@ -203,8 +221,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Apply fade-up to sections
     document.querySelectorAll('.section').forEach(section => {
         section.style.opacity = '0';
-        section.style.transform = 'translateY(30px)';
-        section.style.transition = 'all 0.6s ease-out';
+        section.style.transform = 'translateY(40px)';
+        section.style.transition = 'all 0.8s cubic-bezier(0.32, 0.72, 0, 1)';
         observer.observe(section);
     });
 

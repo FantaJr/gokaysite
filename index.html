@@ -7,13 +7,21 @@
     <title>Gökay Gökcan | Full-Stack Developer & Security Enthusiast</title>
     <meta name="description"
         content="Portfolio of Gökay Gökcan, a Computer Engineering student, Full-Stack Developer, and Cybersecurity enthusiast based in Denizli, Türkiye.">
+    <meta name="keywords" content="Gökay Gökcan, Full-Stack Developer, Computer Engineering, Cybersecurity, Pentesting, Node.js, React, Denizli">
+    <meta name="author" content="Gökay Gökcan">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Gökay Gökcan | Full-Stack Developer & Security Enthusiast">
+    <meta property="og:description" content="Portfolio of Gökay Gökcan, a Computer Engineering student and Full-Stack Developer specializing in secure, scalable systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gokaygokcan.com">
+    <meta property="og:image" content="1740483697314.jpeg">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <!-- Space Mono for brutalist style, Inter for general text -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -25,21 +33,28 @@
 </head>
 
 <body>
-    <!-- Background Elements -->
-    <div class="bg-glow bg-glow-1"></div>
-    <div class="bg-glow bg-glow-2"></div>
-    <div class="bg-noise"></div>
+    
+    <!-- Vertical Sidebar -->
+    <div class="vertical-sidebar">
+        <span data-i18n="sidebar_text">Gökay Gökcan_ Computer Engineering_ | Full-Stack Development_ | Cybersecurity_</span>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-left" data-i18n="top_welcome">WELCOME TO GÖKAY_ COMPUTER ENGINEERING</div>
+        <div class="top-bar-right">GOKAY_GOKCAN@OUTLOOK.COM | TR DENIZLI</div>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">Gökay Gökcan<span class="accent">.</span></a>
+            <a href="#home" class="logo">GÖKAY GÖKCAN_</a>
             <ul class="nav-links">
-                <li><a href="#about" data-i18n="nav_about">About</a></li>
-                <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
-                <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
-                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
-                <li><a href="#education" data-i18n="nav_education">Education</a></li>
+                <li><a href="#home" data-i18n="nav_home">HOME</a></li>
+                <li><a href="#about" data-i18n="nav_about">ABOUT</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">SKILLS</a></li>
+                <li><a href="#experience" data-i18n="nav_experience">EXPERIENCE</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">PROJECTS</a></li>
             </ul>
             <div class="nav-right">
                 <button id="langToggle" class="lang-btn">TR</button>
@@ -53,33 +68,31 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
+            <div class="hero-bg-text">D<br>E<br>V</div>
             <div class="hero-content">
-                <p class="greeting" data-i18n="hero_greeting">Hello, I'm</p>
-                <h1 class="name">Gökay Gökcan</h1>
-                <h2 class="title" data-i18n="hero_title">Computer Engineering Student <span class="divider">|</span>
-                    Full-Stack Developer</h2>
-                <p class="hero-description" data-i18n="hero_desc">Passionate about designing secure and integrated
-                    systems where hardware and software converge.</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary"><span data-i18n="hero_btn_work">View My Work</span> <i
-                            class="fas fa-arrow-right"></i></a>
-                    <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact">Contact Me</a>
+                <div class="hero-tag" data-i18n="hero_tag">CUSTOM SOFTWARE SOLUTIONS_</div>
+                <h1 class="giant-heading" data-i18n="hero_giant">
+                    Coding_<br>
+                    Secure_<br>
+                    <span class="accent-color">Systems_</span>
+                </h1>
+                
+                <div class="hero-desc-wrapper">
+                    <h3 class="mono-subheading" data-i18n="hero_title">Computer Engineering Student | Full-Stack Developer_</h3>
+                    <p class="hero-description" data-i18n="hero_desc">Passionate about designing secure and integrated systems where hardware and software converge.</p>
                 </div>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/gökay-gökcan-a5b03b33b" target="_blank" aria-label="LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/FantaJr" target="_blank" aria-label="GitHub"><i
-                            class="fab fa-github"></i></a>
-                    <a href="mailto:gokay_gokcan@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary"><span data-i18n="hero_btn_work">View My Work</span> <i class="fas fa-arrow-down"></i></a>
                 </div>
             </div>
+            
             <div class="hero-visual">
                 <div class="profile-image-container">
-                    <div class="profile-image">
-                        <img src="1740483697314.jpeg" alt="Gökay Gökcan" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="floating-badge badge-1"><i class="fas fa-code"></i></div>
-                    <div class="floating-badge badge-2"><i class="fas fa-microchip"></i></div>
+                    <img src="1740483697314.jpeg" alt="Gökay Gökcan" class="profile-image">
+                </div>
+                <div class="scroll-indicator" data-i18n="scroll_down">
+                    SCROLL DOWN &darr;
                 </div>
             </div>
         </section>
@@ -87,24 +100,28 @@
         <!-- About Section -->
         <section id="about" class="section">
             <div class="section-header">
-                <h2 class="section-title" data-i18n="about_title">About Me</h2>
-                <div class="line"></div>
+                <h2 class="section-title"><span data-i18n="about_title">About Me</span>_</h2>
             </div>
             <div class="about-content">
-                <div class="about-text glass-panel">
-                    <p data-i18n="about_p1">I am a Computer Engineering student and Full-Stack Developer with a track
-                        record of deploying production-ready applications. I specialize in architecting scalable systems
-                        using <span class="accent-text">Node.js, Supabase, and PostgreSQL</span>, including complex
-                        financial integrations like Virtual POS.</p>
-                    <p data-i18n="about_p2">What sets me apart is my ability to combine software expertise with a strong
-                        background in hardware such as PCB design and ESP32, and a <span
-                            class="accent-text">security-first mindset</span> focused on web application penetration
-                        testing. I thrive on designing secure and fully integrated systems.</p>
-
-                    <ul class="contact-list">
-                        <li><i class="fas fa-map-marker-alt"></i> Denizli, Türkiye</li>
-                        <li><i class="fas fa-envelope"></i> gokay_gokcan@outlook.com</li>
-                    </ul>
+                <div class="about-grid">
+                    <div class="about-text block-panel">
+                        <p data-i18n="about_p1">I am a Computer Engineering student and Full-Stack Developer with a track record of deploying production-ready applications. I specialize in architecting scalable systems using <span class="accent-color">Node.js, Supabase, and PostgreSQL</span>, including complex financial integrations like Virtual POS.</p>
+                        <p data-i18n="about_p2">What sets me apart is my ability to combine software expertise with a strong background in hardware such as PCB design and ESP32, and a <span class="accent-color">security-first mindset</span> focused on web application penetration testing. I thrive on designing secure and fully integrated systems.</p>
+                    </div>
+                    <div class="about-stats block-panel">
+                        <div class="stat-item">
+                            <span class="stat-num">01_</span>
+                            <span class="stat-label" data-i18n="stat_1">Full-Stack<br>Development</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">02_</span>
+                            <span class="stat-label" data-i18n="stat_2">Hardware &<br>IoT Systems</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">03_</span>
+                            <span class="stat-label" data-i18n="stat_3">Cybersecurity<br>& Pentesting</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -112,50 +129,35 @@
         <!-- Skills Section -->
         <section id="skills" class="section">
             <div class="section-header">
-                <h2 class="section-title" data-i18n="skills_title">Technical Skills</h2>
-                <div class="line"></div>
+                <h2 class="section-title"><span data-i18n="skills_title">Technical Skills</span>_</h2>
             </div>
             <div class="skills-grid">
 
-                <div class="skill-category glass-panel">
-                    <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3 data-i18n="skills_lang">Languages</h3>
+                <div class="skill-category block-panel">
+                    <h3 data-i18n="skills_lang">Languages_</h3>
                     <div class="tags">
                         <span>Node.js</span><span>TypeScript</span><span>JavaScript</span><span>Java</span><span>PostgreSQL</span><span>MySQL</span><span>C</span><span>C++</span><span>Python</span>
                     </div>
                 </div>
 
-                <div class="skill-category glass-panel">
-                    <div class="category-icon"><i class="fas fa-layer-group"></i></div>
-                    <h3 data-i18n="skills_framework">Frameworks & Backend</h3>
+                <div class="skill-category block-panel">
+                    <h3 data-i18n="skills_framework">Frameworks & Backend_</h3>
                     <div class="tags">
-                        <span>Nest.js</span><span>Supabase</span><span>Flutter</span><span>React</span><span>REST
-                            APIs</span>
+                        <span>Nest.js</span><span>Supabase</span><span>Flutter</span><span>React</span><span>REST APIs</span>
                     </div>
                 </div>
 
-                <div class="skill-category glass-panel">
-                    <div class="category-icon"><i class="fas fa-microchip"></i></div>
-                    <h3 data-i18n="skills_hard">Hardware & Tools</h3>
+                <div class="skill-category block-panel">
+                    <h3 data-i18n="skills_hard">Hardware & Tools_</h3>
                     <div class="tags">
-                        <span>PCB Design with EasyEDA</span><span>ESP32</span><span>RF
-                            Modules</span><span>Git</span><span>Docker</span><span>Linux VPS</span>
+                        <span>PCB Design</span><span>ESP32</span><span>RF Modules</span><span>Git</span><span>Docker</span><span>Linux VPS</span>
                     </div>
                 </div>
 
-                <div class="skill-category glass-panel">
-                    <div class="category-icon"><i class="fas fa-shield-halved"></i></div>
-                    <h3 data-i18n="skills_sec">Cybersecurity</h3>
+                <div class="skill-category block-panel">
+                    <h3 data-i18n="skills_sec">Cybersecurity_</h3>
                     <div class="tags">
-                        <span>Web App Pentesting</span><span>SQL/NoSQL Injection</span><span>OWASP Top 10</span>
-                    </div>
-                </div>
-
-                <div class="skill-category glass-panel">
-                    <div class="category-icon"><i class="fas fa-credit-card"></i></div>
-                    <h3 data-i18n="skills_fin">Fintech</h3>
-                    <div class="tags">
-                        <span>Virtual POS</span><span>Payment Gateways</span>
+                        <span>Web Pentesting</span><span>SQL/NoSQL Inj.</span><span>OWASP Top 10</span>
                     </div>
                 </div>
 
@@ -165,55 +167,39 @@
         <!-- Experience Section -->
         <section id="experience" class="section">
             <div class="section-header">
-                <h2 class="section-title" data-i18n="exp_title">Experience</h2>
-                <div class="line"></div>
+                <h2 class="section-title"><span data-i18n="exp_title">Experience</span>_</h2>
             </div>
 
             <div class="timeline">
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-panel">
-                        <div class="timeline-header">
-                            <div>
-                                <h3 data-i18n="exp_lead">Lead Developer</h3>
-                                <h4>Mirasım Mobile Application</h4>
-                            </div>
-                            <span class="timeline-date" data-i18n="exp_mirasim_date">Feb 2026 – July 2026</span>
+                <div class="timeline-item block-panel">
+                    <div class="timeline-header">
+                        <div class="timeline-title-wrap">
+                            <h3 data-i18n="exp_lead">Lead Developer</h3>
+                            <h4>Mirasım Mobile Application</h4>
                         </div>
-                        <p class="timeline-location">App Store & Google Play</p>
-                        <ul class="timeline-list">
-                            <li data-i18n="exp_mirasim_1">Architected and launched a legal-tech application for
-                                automated Turkish inheritance law documentation and mediation protocols.</li>
-                            <li data-i18n="exp_mirasim_2">Built a cross-platform mobile experience using Flutter with a
-                                powerful Node.js & Supabase backend.</li>
-                            <li data-i18n="exp_mirasim_3">Successfully navigated the App Store and Google Play Store
-                                submission processes, managing updates and user feedback for a production environment.
-                            </li>
-                        </ul>
+                        <span class="timeline-date mono-text" data-i18n="exp_mirasim_date">Feb 2026 – July 2026</span>
                     </div>
+                    <ul class="timeline-list">
+                        <li data-i18n="exp_mirasim_1">Architected and launched a legal-tech application for automated Turkish inheritance law documentation and mediation protocols.</li>
+                        <li data-i18n="exp_mirasim_2">Built a cross-platform mobile experience using Flutter with a powerful Node.js & Supabase backend.</li>
+                        <li data-i18n="exp_mirasim_3">Successfully navigated the App Store and Google Play Store submission processes, managing updates and user feedback for a production environment.</li>
+                    </ul>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-panel">
-                        <div class="timeline-header">
-                            <div>
-                                <h3 data-i18n="exp_fs">Full-Stack Developer</h3>
-                                <h4>Stai Bilişim</h4>
-                            </div>
-                            <span class="timeline-date" data-i18n="exp_stai_date">Jan 2025 – July 2026</span>
+                <div class="timeline-item block-panel">
+                    <div class="timeline-header">
+                        <div class="timeline-title-wrap">
+                            <h3 data-i18n="exp_fs">Full-Stack Developer</h3>
+                            <h4>Stai Bilişim</h4>
                         </div>
-                        <p class="timeline-location">Denizli, TR</p>
-                        <ul class="timeline-list">
-                            <li data-i18n="exp_stai_1">Developed and maintained the official corporate platform
-                                staibilisim.com using Node.js and modern web technologies.</li>
-                            <li data-i18n="exp_stai_2">Implemented secure Virtual POS payment gateways and managed
-                                backend infrastructure for financial transactions.</li>
-                            <li data-i18n="exp_stai_3">Administered Linux VPS environments, configuring SSL, Nginx, and
-                                automated deployment pipelines.</li>
-                        </ul>
+                        <span class="timeline-date mono-text" data-i18n="exp_stai_date">Jan 2025 – July 2026</span>
                     </div>
+                    <ul class="timeline-list">
+                        <li data-i18n="exp_stai_1">Developed and maintained the official corporate platform staibilisim.com using Node.js and modern web technologies.</li>
+                        <li data-i18n="exp_stai_2">Implemented secure Virtual POS payment gateways and managed backend infrastructure for financial transactions.</li>
+                        <li data-i18n="exp_stai_3">Administered Linux VPS environments, configuring SSL, Nginx, and automated deployment pipelines.</li>
+                    </ul>
                 </div>
 
             </div>
@@ -222,103 +208,67 @@
         <!-- Projects Section -->
         <section id="projects" class="section">
             <div class="section-header">
-                <h2 class="section-title" data-i18n="projects_title">Projects & Products</h2>
-                <div class="line"></div>
+                <h2 class="section-title"><span data-i18n="projects_title">Projects & Products</span>_</h2>
             </div>
 
             <div class="projects-grid">
 
                 <!-- Weather App -->
-                <div class="project-card glass-panel">
-                    <div class="project-icon"><i class="fas fa-cloud-sun-rain"></i></div>
-                    <div class="project-info">
-                        <h3>Weather Drive - Along The Way</h3>
+                <div class="project-card block-panel">
+                    <div class="project-header">
+                        <h3>Weather Drive</h3>
                         <div class="project-badges">
-                            <span class="badge"><i class="fab fa-apple"></i> App Store</span>
-                            <span class="badge upcoming"><i class="fab fa-android"></i> <span
-                                    data-i18n="badge_android">Android Soon</span></span>
+                            <span class="badge">App Store</span>
+                            <span class="badge upcoming" data-i18n="badge_android">Android Soon</span>
                         </div>
-                        <p data-i18n="project_weather_desc">A mobile application delivering real-time weather forecasts
-                            along driving routes to ensure safe travel.</p>
-                        <div class="project-links mt-3">
-                            <a href="https://apps.apple.com/in/app/weather-drive-along-the-way/id6783059318"
-                                target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-apple"></i> <span
-                                    data-i18n="view_appstore">View on App Store</span></a>
-                        </div>
+                    </div>
+                    <p class="mono-text" data-i18n="project_weather_desc">A mobile application delivering real-time weather forecasts along driving routes to ensure safe travel.</p>
+                    <div class="project-links mt-auto">
+                        <a href="https://apps.apple.com/in/app/weather-drive-along-the-way/id6783059318" target="_blank" class="btn btn-outline" data-i18n="view_appstore">View on App Store</a>
                     </div>
                 </div>
 
-                <!-- Custom Multi-Tool Hardware -->
-                <div class="project-card glass-panel">
-                    <div class="project-icon"><i class="fas fa-microchip"></i></div>
-                    <div class="project-info">
-                        <h3 data-i18n="project_hard_title">Custom Multi-Tool Hardware using ESP32</h3>
+                <!-- Hardware -->
+                <div class="project-card block-panel">
+                    <div class="project-header">
+                        <h3 data-i18n="project_hard_title">Custom Multi-Tool Hardware</h3>
                         <div class="project-badges">
-                            <span class="badge tech">Hardware</span>
-                            <span class="badge tech">ESP32</span>
-                            <span class="badge tech">PCB Design</span>
+                            <span class="badge">ESP32</span>
+                            <span class="badge">PCB</span>
                         </div>
-                        <ul class="project-details">
-                            <li data-i18n="project_hard_1">Designed and assembled a portable hardware tool featuring RF,
-                                IR and 2.4 GHZ capabilities for signal analysis.</li>
-                            <li data-i18n="project_hard_2">Developed custom PCB layouts using EasyEDA, focusing on
-                                signal integrity and compact component placement.</li>
-                            <li data-i18n="project_hard_3">Integrated low-level firmware with wireless communication
-                                modules for real-time environment interaction.</li>
-                        </ul>
                     </div>
+                    <ul class="project-details mono-text">
+                        <li data-i18n="project_hard_1">Designed portable hardware tool featuring RF, IR and 2.4 GHZ capabilities.</li>
+                        <li data-i18n="project_hard_2">Developed custom PCB layouts using EasyEDA focusing on signal integrity.</li>
+                        <li data-i18n="project_hard_3">Integrated low-level firmware with wireless communication modules.</li>
+                    </ul>
                 </div>
 
-                <!-- Cybersecurity Lab -->
-                <div class="project-card glass-panel">
-                    <div class="project-icon"><i class="fas fa-shield-virus"></i></div>
-                    <div class="project-info">
-                        <h3 data-i18n="project_sec_title">Cybersecurity & Pentesting Lab</h3>
+                <!-- Cybersecurity -->
+                <div class="project-card block-panel">
+                    <div class="project-header">
+                        <h3 data-i18n="project_sec_title">Cybersecurity & Pentesting</h3>
                         <div class="project-badges">
-                            <span class="badge tech">Security</span>
-                            <span class="badge tech">Pentesting</span>
-                            <span class="badge tech">OWASP</span>
+                            <span class="badge">Security</span>
+                            <span class="badge">OWASP</span>
                         </div>
-                        <ul class="project-details">
-                            <li data-i18n="project_sec_1">Conducting security audits on self-developed applications to
-                                identify and mitigate OWASP Top 10 vulnerabilities.</li>
-                            <li data-i18n="project_sec_2">Utilizing tools like Burp Suite and Nmap for web application
-                                reconnaissance and vulnerability assessment.</li>
-                        </ul>
                     </div>
+                    <ul class="project-details mono-text">
+                        <li data-i18n="project_sec_1">Conducting security audits on applications to identify OWASP Top 10 vulnerabilities.</li>
+                        <li data-i18n="project_sec_2">Utilizing Burp Suite and Nmap for web app reconnaissance and vulnerability assessment.</li>
+                    </ul>
                 </div>
 
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="section">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="edu_title">Education</h2>
-                <div class="line"></div>
-            </div>
-
-            <div class="education-card glass-panel">
-                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
-                <div class="edu-details">
-                    <h3 data-i18n="edu_degree">Bachelor of Science in Computer Engineering</h3>
-                    <h4>Pamukkale University</h4>
-                    <p class="edu-meta"><i class="fas fa-calendar-alt"></i> <span data-i18n="edu_date">Oct 2023 – July
-                            2027 Expected</span> <span class="divider">|</span> <i class="fas fa-map-marker-alt"></i>
-                        Denizli, TR</p>
-                </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="section">
-            <div class="contact-box glass-panel text-center">
-                <h2 data-i18n="contact_title">Let's Build Something Secure & Scalable</h2>
-                <p data-i18n="contact_desc">I'm currently open to new opportunities, collaborations, and exciting
-                    projects.</p>
+            <div class="contact-box block-panel">
+                <h2 class="giant-heading"><span data-i18n="contact_title">Let's Build Something Secure</span>_</h2>
+                <p class="mono-text mt-3" data-i18n="contact_desc">I'm currently open to new opportunities, collaborations, and exciting projects.</p>
                 <div class="contact-actions mt-4">
-                    <a href="mailto:gokay_gokcan@outlook.com" class="btn btn-primary btn-lg"><i
-                            class="fas fa-paper-plane"></i> <span data-i18n="contact_btn">Get In Touch</span></a>
+                    <a href="mailto:gokay_gokcan@outlook.com" class="btn btn-primary" data-i18n="contact_btn">Get In Touch -></a>
                 </div>
             </div>
         </section>
@@ -327,11 +277,10 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p><span data-i18n="footer_copy">&copy; 2026 Gökay Gökcan. All Rights Reserved.</span></p>
+            <p class="mono-text"><span data-i18n="footer_copy">&copy; 2026 Gökay Gökcan. All Rights Reserved.</span></p>
             <div class="footer-socials">
-                <a href="https://linkedin.com/in/gökay-gökcan-a5b03b33b" target="_blank"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/FantaJr" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/gökay-gökcan-a5b03b33b" target="_blank">LINKEDIN_</a>
+                <a href="https://github.com/FantaJr" target="_blank">GITHUB_</a>
             </div>
         </div>
     </footer>
