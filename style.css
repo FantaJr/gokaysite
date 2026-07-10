@@ -709,7 +709,7 @@ canvas {
 
     /* Navbar */
     .navbar {
-        overflow: hidden;
+        overflow: visible;
     }
 
     .nav-container {
@@ -741,17 +741,21 @@ canvas {
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100%;
+        width: 100vw;
+        position: fixed;
+        top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
         background: var(--bg-main);
         border-bottom: var(--border-width) solid var(--border-color);
-        padding: 20px 16px;
-        gap: 1.25rem;
+        padding: 80px 16px 30px;
+        gap: 1.5rem;
         text-align: center;
         box-sizing: border-box;
-        max-height: 70vh;
+        z-index: 998;
+        justify-content: flex-start;
+        align-items: center;
         overflow-y: auto;
     }
 
