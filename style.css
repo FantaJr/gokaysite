@@ -585,18 +585,20 @@ main {
 
 @media (max-width: 768px) {
     :root {
-        --section-padding: 60px 0;
+        --section-padding: 50px 0;
     }
     
     html, body {
-        overflow-x: hidden;
+        overflow-x: hidden !important;
+        max-width: 100%;
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
     
-    body { padding-right: 0; }
     .vertical-sidebar { display: none; }
     
-    main, .nav-container, .footer-content { padding: 0 15px; }
+    main, .nav-container, .footer-content { padding: 0 15px; max-width: 100%; box-sizing: border-box; }
     
     .nav-links {
         display: none;
@@ -610,6 +612,7 @@ main {
         padding: 20px;
         gap: 1.5rem;
         text-align: center;
+        box-sizing: border-box;
     }
     
     .nav-links.active {
@@ -618,26 +621,43 @@ main {
     
     .hamburger { display: block; }
     
-    .hero { flex-direction: column; min-height: auto; padding-top: 40px; text-align: center; }
-    .hero-content { padding-right: 0; padding-bottom: 40px; align-items: center; }
-    .hero-tag { align-self: center; }
-    .hero-visual { border-left: none; border-top: var(--border-width) solid var(--border-color); min-height: 350px; }
+    .hero { flex-direction: column; min-height: auto; padding-top: 30px; text-align: center; border-bottom: none; }
+    .hero-content { padding-right: 0; padding-bottom: 30px; display: flex; flex-direction: column; align-items: center; width: 100%; }
+    .hero-tag { align-self: center; margin-bottom: 1.5rem; }
     
-    .giant-heading { font-size: 13vw; word-wrap: break-word; }
-    .section-title { font-size: 10vw; word-wrap: break-word; text-align: center; }
+    .hero-desc-wrapper { max-width: 100%; width: 100%; padding: 0 10px; }
+    
+    .hero-visual { border-left: none; border-top: var(--border-width) solid var(--border-color); min-height: auto; width: 100%; border-bottom: var(--border-width) solid var(--border-color); }
+    
+    .profile-image-container { min-height: 300px; }
+    
+    /* Center all headers strictly */
+    .section-header { text-align: center; width: 100%; }
+    .giant-heading, .section-title { 
+        text-align: center !important; 
+        font-size: 11vw; 
+        word-wrap: break-word; 
+        word-break: break-word;
+        hyphens: auto;
+        max-width: 100%;
+    }
     .contact-box .giant-heading { font-size: 10vw; }
     
     .hero-bg-text { display: none; }
     
-    .block-panel { padding: 20px; text-align: center; }
-    .about-grid { grid-template-columns: 1fr; }
-    .skills-grid { grid-template-columns: 1fr; }
-    .projects-grid { grid-template-columns: 1fr; }
+    .block-panel { padding: 20px 15px; text-align: center; width: 100%; box-sizing: border-box; overflow-wrap: break-word; }
+    .contact-box { padding: 40px 15px; }
     
-    .timeline-item { padding-left: 20px; }
-    .timeline-header { flex-direction: column; text-align: left; }
-    .timeline-list { text-align: left; }
-    .project-details { text-align: left; }
+    .about-grid, .skills-grid, .projects-grid { grid-template-columns: 1fr; width: 100%; gap: 20px; }
+    
+    .timeline-item { padding-left: 0; text-align: center; }
+    .timeline-header { flex-direction: column; text-align: center; align-items: center; justify-content: center; }
+    .timeline-list { text-align: left; padding-left: 10px; }
+    .timeline-list li::before { left: -15px; }
+    
+    .project-details { text-align: left; padding-left: 10px; }
+    .project-details li::before { left: -15px; }
+    .project-badges { justify-content: center; }
     
     .footer-content { flex-direction: column; gap: 20px; text-align: center; }
 }
