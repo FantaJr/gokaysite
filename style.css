@@ -131,7 +131,7 @@ main {
     margin-top: auto;
 }
 
-/* Vertical Sidebar */
+/* Vertical Sidebar — continuously scrolling (marquee) text */
 .vertical-sidebar {
     position: fixed;
     top: 0;
@@ -144,6 +144,21 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    /* hides the looping copy outside the visible strip */
+}
+
+.vertical-sidebar .marquee-track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: sidebarScroll 14s linear infinite;
+    will-change: transform;
+}
+
+/* pause the flow on hover */
+.vertical-sidebar:hover .marquee-track {
+    animation-play-state: paused;
 }
 
 .vertical-sidebar span {
@@ -154,6 +169,25 @@ main {
     color: var(--accent-color);
     letter-spacing: 2px;
     white-space: nowrap;
+    padding: 30px 0;
+    /* gap between each repeated copy of the text */
+}
+
+@keyframes sidebarScroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50%);
+        /* exactly half, since the text is duplicated once in the HTML */
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .vertical-sidebar .marquee-track {
+        animation: none;
+    }
 }
 
 /* Navbar */

@@ -118,15 +118,15 @@ const translations = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // --- Language Toggle Logic ---
     let currentLang = 'en';
     const langToggleBtn = document.getElementById('langToggle');
-    
+
     function setLanguage(lang) {
         currentLang = lang;
         langToggleBtn.textContent = lang === 'en' ? 'TR' : 'EN';
-        
+
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (translations[lang][key]) {
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Navbar Scroll Effect ---
     const navbar = document.querySelector('.navbar');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Mobile Menu Toggle ---
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-    
+
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
         const icon = hamburger.querySelector('i');
@@ -183,14 +183,14 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 // Adjust for sticky header
                 const headerOffset = 80;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-  
+
                 window.scrollTo({
                     top: offsetPosition,
                     behavior: 'smooth'
