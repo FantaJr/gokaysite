@@ -286,20 +286,6 @@ main {
     gap: 1rem;
 }
 
-.lang-btn {
-    font-family: var(--font-mono);
-    font-size: 0.9rem;
-    font-weight: 700;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-.lang-btn::after {
-    content: ' ▼';
-    font-size: 0.7rem;
-}
 
 .hamburger {
     display: none;
