@@ -1,7 +1,7 @@
 // English text lives in index.html (that is what search engines index).
 // Only Turkish is stored here; English is read back from the page on load.
 const TR = {
-        "sidebar_text": "Gökay Gökcan_ Bilgisayar Mühendisliği_ | Full-Stack Geliştirme_ | Siber Güvenlik_",
+        "sidebar_text": "Gökay Gökcan | Bilgisayar Mühendisliği | Full-Stack Geliştirme | Siber Güvenlik |",
         "nav_home": "ANASAYFA",
         "nav_about": "HAKKIMDA",
         "nav_skills": "YETENEKLER",
@@ -9,13 +9,13 @@ const TR = {
         "nav_projects": "PROJELER",
         "nav_education": "EĞİTİM",
         "hero_greeting": "Merhaba, Ben",
-        "hero_tag": "ÖZEL YAZILIM ÇÖZÜMLERİ_",
-        "hero_giant": "Güvenli_<br>Sistemler_<br><span class=\"accent-color\">Kodluyoruz_</span>",
+        "hero_tag": "ÖZEL YAZILIM ÇÖZÜMLERİ",
+        "hero_giant": "Güvenli<br>Sistemler<br><span class=\"accent-color\">Kodluyoruz</span>",
         "scroll_down": "AŞAĞI KAYDIR &darr;",
         "stat_1": "Full-Stack<br>Geliştirme",
         "stat_2": "Donanım &<br>IoT Sistemleri",
         "stat_3": "Siber Güvenlik<br>& Pentest",
-        "hero_title": "Bilgisayar Mühendisliği Öğrencisi | Full-Stack Geliştirici_",
+        "hero_title": "Bilgisayar Mühendisliği Öğrencisi | Full-Stack Geliştirici",
         "hero_desc": "Donanım ve yazılımın birleştiği güvenli ve entegre sistemler tasarlama tutkusuna sahibim.",
         "hero_btn_work": "Projelerim",
         "hero_btn_contact": "Bana Ulaşın",
@@ -52,6 +52,7 @@ const TR = {
         "project_sec_2": "Web uygulamalarında keşif (reconnaissance) ve zafiyet analizi için Burp Suite ve Nmap gibi araçlar kullanıyorum.",
         "edu_title": "Eğitim",
         "edu_degree": "Bilgisayar Mühendisliği Lisans Eğitimi",
+        "edu_school": "Pamukkale Üniversitesi",
         "edu_date": "Ekim 2023 – Temmuz 2027 Beklenen",
         "contact_title": "Güvenli ve Ölçeklenebilir Sistemler İnşa Edelim",
         "contact_desc": "Şu anda yeni fırsatlara, iş birliklerine ve heyecan verici projelere açığım.",
@@ -59,7 +60,7 @@ const TR = {
         "nav_contact": "İLETİŞİM",
         "footer_copy": "&copy; 2026 Gökay Gökcan. Tüm Hakları Saklıdır.",
         "_title": "Gökay Gökcan | Full-Stack Geliştirici & Siber Güvenlik",
-        "_desc": "Gökay Gökcan — Denizli'de Bilgisayar Mühendisliği öğrencisi ve Full-Stack Geliştirici. Node.js, Flutter ve Supabase ile güvenli web ve mobil uygulamalar, ESP32 donanım ve web sızma testleri.",
+        "_desc": "Gökay Gökcan — Pamukkale Üniversitesi Bilgisayar Mühendisliği öğrencisi ve Full-Stack Geliştirici. Node.js, Flutter ve Supabase ile güvenli web ve mobil uygulamalar, ESP32 donanım ve web sızma testleri.",
         "_menu_open": "Menüyü aç",
         "_menu_close": "Menüyü kapat",
         "_lang": "Switch to English"

@@ -270,15 +270,14 @@ main {
     position: relative;
 }
 
-.nav-links a::after {
-    content: '_';
-    opacity: 0;
-    transition: var(--transition);
+.nav-links a {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
 }
 
-.nav-links a:hover::after {
-    opacity: 1;
-    color: var(--accent-color);
+.nav-links a:hover {
+    text-decoration-line: underline;
+    text-decoration-color: var(--accent-color);
 }
 
 .nav-right {
@@ -537,7 +536,7 @@ main {
 /* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 30px;
 }
 
@@ -628,7 +627,7 @@ main {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
 }
 
@@ -677,6 +676,10 @@ main {
     margin-bottom: 2rem;
 }
 
+.project-details:last-child {
+    margin-bottom: 0;
+}
+
 .project-details li {
     position: relative;
     padding-left: 1.2rem;
@@ -698,6 +701,16 @@ main {
 
 .project-links .btn {
     flex: 1 1 200px;
+}
+
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-desc-wrapper {
+    max-width: 560px;
 }
 
 .contact-actions {
@@ -789,6 +802,10 @@ body.menu-open {
     main {
         padding: 0 32px;
     }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 /* Tablets & below: hamburger menu, no sidebar */
@@ -868,11 +885,6 @@ body.menu-open {
         letter-spacing: -0.01em;
     }
 
-    .nav-links a::after {
-        opacity: 1;
-        color: var(--accent-color);
-    }
-
     .giant-heading {
         font-size: clamp(2.5rem, 7vw, 5rem);
     }
@@ -883,6 +895,20 @@ body.menu-open {
 
     .about-grid {
         grid-template-columns: 2fr 1fr;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .projects-grid .project-card:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .projects-grid .project-card:first-child .project-links .btn {
+        flex: 0 1 260px;
     }
 
     .footer-content {
@@ -933,12 +959,6 @@ body.menu-open {
 
     .hero-description {
         font-size: 1rem;
-    }
-
-    .hero-cta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
     }
 
     .hero-cta .btn {
@@ -1014,6 +1034,10 @@ body.menu-open {
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .projects-grid .project-card:first-child .project-links .btn {
+        flex: 1 1 200px;
     }
 
     .about-text {
