@@ -12,5 +12,8 @@
     <image:image>
       <image:loc>https://gokaygokcan.com/assets/og-image.jpg</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://gokaygokcan.com/assets/fbg-poster.jpg</image:loc>
+    </image:image>
   </url>
 </urlset>

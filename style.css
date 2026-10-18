@@ -726,6 +726,67 @@ main {
 }
 
 
+/* Research */
+.research-card {
+    display: grid;
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
+}
+
+.research-thumb {
+    display: block;
+    border: var(--border-width) solid var(--border-color);
+    background: #fff;
+    transition: var(--transition);
+}
+
+.research-thumb:hover {
+    box-shadow: 6px 6px 0 var(--accent-color);
+    transform: translate(-3px, -3px);
+}
+
+.research-thumb img {
+    width: 100%;
+    height: auto;
+}
+
+.research-body {
+    min-width: 0;
+}
+
+.research-body .project-badges {
+    margin-bottom: 1rem;
+}
+
+.research-body h3 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    overflow-wrap: break-word;
+}
+
+.research-meta {
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.research-desc {
+    margin-bottom: 1.5rem;
+    max-width: 65ch;
+}
+
+.research-affil {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: 1.25rem 0 1.5rem;
+}
+
+.research-body .project-links .btn {
+    flex: 0 1 auto;
+}
+
 /* Contact Box */
 .contact-box {
     text-align: center;
@@ -904,6 +965,23 @@ body.menu-open {
 
 /* Phones & small tablets: single column, left-aligned reading text */
 @media (max-width: 768px) {
+    .research-card {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .research-thumb {
+        max-width: 320px;
+    }
+
+    .research-body h3 {
+        font-size: 1.25rem;
+    }
+
+    .research-body .project-links .btn {
+        flex: 1 1 200px;
+    }
+
     :root {
         --section-padding: 56px 0;
     }
